@@ -1,0 +1,34 @@
+@import 'layout/header';
+@import 'layout/footer';
+
+@import '_variables';
+@import '_mixins';
+@import '_placeholders';
+@import '_components';
+@import '_normalizer';
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap');
+
+main{
+    font-family: 'Roboto', sans-serif;
+
+    & .localisation {
+        @extend %grid-center;
+        @include grid-template-set($localisation);
+        padding: 1em;
+        background: $gris-clair;
+        background: linear-gradient(
+            180deg,
+             rgba(173,173,173,.35) 0%,
+             rgba(234,234,234,.75) 15%,
+             rgba(234,234,234,1) 100%); 
+        & h3 {
+
+
+            & i {
+                padding: 0 0.5em 0 0;
+            }
+        }
+
+    }
+}

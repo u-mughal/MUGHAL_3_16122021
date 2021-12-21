@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap");
+main .localisation, header {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+}
+
+header {
+  grid-template-columns: repeat(1, 1fr);
+  padding: 1em;
+}
+header #blockimg {
+  width: 50%;
+  grid-row: 1 / auto;
+  grid-column: 1 / auto;
+}
+header #blockimg img {
+  width: 100%;
+  justify-content: center;
+  display: flex;
+}
+
+main .localisation, header {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+}
+
+main .localisation, header {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  line-height: 1.15;
+  /* 1 */
+}
+
+h1 {
+  font-size: 2em;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+.stop {
+  clear: both;
+}
+
+strong {
+  font-weight: normal;
+}
+
+img {
+  border-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+
+br {
+  margin-bottom: 10px;
+}
+
+main {
+  font-family: "Roboto", sans-serif;
+}
+main .localisation {
+  grid-template-columns: repeat(1, 1fr);
+  padding: 1em;
+  background: #e2e2e2;
+  background: linear-gradient(180deg, rgba(173, 173, 173, 0.35) 0%, rgba(234, 234, 234, 0.75) 15%, #eaeaea 100%);
+}
+main .localisation h3 i {
+  padding: 0 0.5em 0 0;
+}

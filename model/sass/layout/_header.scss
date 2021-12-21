@@ -1,0 +1,21 @@
+@import '../_variables';
+@import '../_mixins';
+@import '../_placeholders';
+@import '../_components';
+
+
+header{
+    @extend %grid-center;
+    @include grid-template-set($header);
+    padding: 1em;
+
+    & #blockimg{
+        width: 50%;
+        @include grid-pos-set (1, auto, 1, auto);
+        & img{
+            width: 100%;
+            justify-content: center;
+            display: flex;
+        }
+    }
+}
