@@ -88,3 +88,18 @@ main .localisation {
 main .localisation h3 i {
   padding: 0 0.5em 0 0;
 }
+main .explorer {
+  text-align: center;
+}
+main .explorer h2 {
+  font-size: 1.5rem;
+  margin: 1rem;
+  padding-left: 15%;
+  padding-right: 15%;
+}
+main .explorer p {
+  font-size: 1rem;
+  margin: 1rem;
+  padding-left: 15%;
+  padding-right: 15%;
+}
