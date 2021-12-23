@@ -1,0 +1,8 @@
+.btn__about button{
+    @include btn-about;
+    &:hover {
+      background-color: lighten(#9356dc, 10%);
+      background-blend-mode: lighten;
+      box-shadow: 1px 1px px #000;
+    }
+}
