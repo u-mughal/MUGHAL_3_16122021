@@ -17,10 +17,18 @@ $txt-fond-vert: #008766;
 //Sections
 $header: "header";
 $localisation: "localisation";
+$presentation: "presentation";
+$commentCaMarche: "commentCaMarche";
+$lesRestaurants: "lesRestaurants";
+$footer: "footer";
 
 //Positionnement
 $grid-columns-header: 1;
 $grid-columns-localisation: 1;
+$grid-columns-presentation: 1;
+$grid-columns-commentCaMarche: 3;
+$grid-columns-lesRestaurants: 4;
+$grid-columns-footer: 3;
 
 //Bouton gradient
 $linear-gradient:linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);

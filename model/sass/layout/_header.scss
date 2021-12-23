@@ -10,12 +10,10 @@ header{
     padding: 1em;
 
     & #blockimg{
-        width: 50%;
+        width: 30%;
         @include grid-pos-set (1, auto, 1, auto);
         & img{
             width: 100%;
-            justify-content: center;
-            display: flex;
         }
     }
 }

@@ -1,25 +1,32 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap");
-main .localisation, header {
+main .lesRestaurants, main .commentCaMarche, main .presentation, main .localisation, header {
   display: grid;
   align-items: center;
   justify-items: center;
 }
 
-.btn__about button {
-  margin-top: 1rem;
-  background-image: linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
-  border: 1px solid transparent;
-  border-radius: 30px;
-  padding: 15px 10px;
-  color: #fff;
-  font-weight: bold;
-  box-shadow: 2px 2px 4px #aaa;
-  cursor: pointer;
+.list-item {
+  padding: 1.5em 1em;
+  text-align: left;
+  border-radius: 1em;
+  box-shadow: 0 4px 11px rgba(0, 0, 0, 0.2);
 }
-.btn__about button:hover {
-  background-color: #ae80e5;
-  background-blend-mode: lighten;
-  box-shadow: 1px 1px px #000;
+
+.btn {
+  padding: 1em 1.5em;
+  color: #ffffff;
+  transition: 250ms;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.btn--gradient {
+  background-image: radial-gradient(100% 50% at 20% 10%, #FF79DA 0%, #9356DC 200%);
+}
+.btn--radius {
+  border-radius: 2em;
+}
+.btn:hover {
+  opacity: 0.8;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 header {
@@ -27,60 +34,72 @@ header {
   padding: 1em;
 }
 header #blockimg {
-  width: 50%;
+  width: 30%;
   grid-row: 1 / auto;
   grid-column: 1 / auto;
 }
 header #blockimg img {
   width: 100%;
-  justify-content: center;
-  display: flex;
 }
 
-main .localisation, header {
+main .lesRestaurants, main .commentCaMarche, main .presentation, main .localisation, header {
   display: grid;
   align-items: center;
   justify-items: center;
 }
 
-.btn__about button {
-  margin-top: 1rem;
-  background-image: linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
-  border: 1px solid transparent;
-  border-radius: 30px;
-  padding: 15px 10px;
-  color: #fff;
-  font-weight: bold;
-  box-shadow: 2px 2px 4px #aaa;
-  cursor: pointer;
-}
-.btn__about button:hover {
-  background-color: #ae80e5;
-  background-blend-mode: lighten;
-  box-shadow: 1px 1px px #000;
+.list-item {
+  padding: 1.5em 1em;
+  text-align: left;
+  border-radius: 1em;
+  box-shadow: 0 4px 11px rgba(0, 0, 0, 0.2);
 }
 
-main .localisation, header {
+.btn {
+  padding: 1em 1.5em;
+  color: #ffffff;
+  transition: 250ms;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.btn--gradient {
+  background-image: radial-gradient(100% 50% at 20% 10%, #FF79DA 0%, #9356DC 200%);
+}
+.btn--radius {
+  border-radius: 2em;
+}
+.btn:hover {
+  opacity: 0.8;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+main .lesRestaurants, main .commentCaMarche, main .presentation, main .localisation, header {
   display: grid;
   align-items: center;
   justify-items: center;
 }
 
-.btn__about button {
-  margin-top: 1rem;
-  background-image: linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
-  border: 1px solid transparent;
-  border-radius: 30px;
-  padding: 15px 10px;
-  color: #fff;
-  font-weight: bold;
-  box-shadow: 2px 2px 4px #aaa;
-  cursor: pointer;
+.list-item {
+  padding: 1.5em 1em;
+  text-align: left;
+  border-radius: 1em;
+  box-shadow: 0 4px 11px rgba(0, 0, 0, 0.2);
 }
-.btn__about button:hover {
-  background-color: #ae80e5;
-  background-blend-mode: lighten;
-  box-shadow: 1px 1px px #000;
+
+.btn {
+  padding: 1em 1.5em;
+  color: #ffffff;
+  transition: 250ms;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.btn--gradient {
+  background-image: radial-gradient(100% 50% at 20% 10%, #FF79DA 0%, #9356DC 200%);
+}
+.btn--radius {
+  border-radius: 2em;
+}
+.btn:hover {
+  opacity: 0.8;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 * {
@@ -129,6 +148,8 @@ br {
 
 main {
   font-family: "Roboto", sans-serif;
+  /* Debut section commentCaMarche */
+  /* Debut section lesRestaurants */
 }
 main .localisation {
   grid-template-columns: repeat(1, 1fr);
@@ -139,19 +160,77 @@ main .localisation {
 main .localisation h3 i {
   padding: 0 0.5em 0 0;
 }
-main .explorer {
-  background-color: #F6F6F6;
+main .presentation {
+  grid-template-columns: repeat(1, 1fr);
+  padding: 2em 0 3em;
+  background-color: #f6f6f6;
   text-align: center;
-  padding: 8% 8%;
 }
-main .explorer h2 {
-  font-size: 1.5rem;
-  margin-right: 15%;
-  margin-left: 15%;
+main .presentation h2 {
+  padding: 0 5em;
 }
-main .explorer p {
-  font-size: 1rem;
-  margin-right: 15%;
-  margin-left: 15%;
-  padding: 0.7rem;
+main .presentation p {
+  padding: 1em 5em 2em;
+}
+main .commentCaMarche {
+  grid-template-columns: repeat(1, 1fr);
+  padding: 3em 1em;
+}
+main .commentCaMarche h2 {
+  grid-row: 1 / auto;
+  grid-column: 1 / 2;
+  justify-self: start;
+}
+main .commentCaMarche ol {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-row: 2 / auto;
+  grid-column: 1 / 4;
+  grid-gap: 2em;
+  margin: 1em 1em 0;
+  justify-self: normal;
+  counter-reset: section;
+}
+main .commentCaMarche li::before {
+  counter-increment: section;
+  content: counter(section);
+  position: relative;
+  left: -1.9em;
+  padding: 0.3em 0.6em;
+  border-radius: 70%;
+  background-color: #9356DC;
+  color: #ffffff;
+}
+main .commentCaMarche li:hover {
+  background-color: #f2eafb;
+}
+main .commentCaMarche li:hover i {
+  color: #9356DC;
+}
+main .commentCaMarche p {
+  display: inline-block;
+  position: relative;
+  left: -0.7em;
+}
+main .commentCaMarche i {
+  padding: 0 1em 0 0;
+}
+main .lesRestaurants {
+  grid-template-columns: repeat(1, 1fr);
+  padding: 3em 1em;
+  background: #f6f6f6;
+}
+main .lesRestaurants h2 {
+  grid-row: 1 / auto;
+  grid-column: 1 / 2;
+  justify-self: start;
+}
+main .lesRestaurants ul {
+  grid-row: 2 / auto;
+  grid-column: 1 / 5;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 2em;
+  justify-self: normal;
+  margin: 1em 0;
 }
