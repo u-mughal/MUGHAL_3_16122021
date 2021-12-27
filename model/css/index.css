@@ -234,3 +234,26 @@ main .lesRestaurants ul {
   justify-self: normal;
   margin: 1em 0;
 }
+main .lesRestaurants .sticker.sticker__new {
+  color: #1b6150;
+  padding: 10px 20px;
+  margin: 0;
+  position: absolute;
+  background: #99e2d0;
+  top: -16rem;
+  right: 2rem;
+}
+main .lesRestaurants img {
+  height: 60%;
+  width: 100%;
+  border-radius: 1rem 1rem 0 0;
+  box-shadow: none;
+  object-fit: cover;
+}
+main .lesRestaurants a {
+  background-color: #fff;
+  border-radius: 1rem;
+  position: relative;
+  text-decoration: none;
+  color: inherit;
+}
