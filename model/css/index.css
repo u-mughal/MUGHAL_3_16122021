@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap");
-main .lesRestaurants, main .commentCaMarche, main .presentation, main .localisation, header {
+main .lesRestaurants, main .commentCaMarche, main .presentation, main .localisation, footer, header {
   display: grid;
   align-items: center;
   justify-items: center;
@@ -42,7 +42,7 @@ header #blockimg img {
   width: 100%;
 }
 
-main .lesRestaurants, main .commentCaMarche, main .presentation, main .localisation, header {
+main .lesRestaurants, main .commentCaMarche, main .presentation, main .localisation, footer, header {
   display: grid;
   align-items: center;
   justify-items: center;
@@ -72,7 +72,29 @@ main .lesRestaurants, main .commentCaMarche, main .presentation, main .localisat
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
-main .lesRestaurants, main .commentCaMarche, main .presentation, main .localisation, header {
+footer {
+  background-color: #353535;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 3em;
+}
+footer h2 {
+  color: #fff;
+  font-family: Shrikhand, "cursive";
+  font-size: 1.2rem;
+  margin: 0 0 1rem;
+}
+footer li {
+  margin: 0.75rem;
+}
+footer a {
+  color: #fff;
+  text-decoration: none;
+}
+footer i {
+  margin-right: 0.5rem;
+}
+
+main .lesRestaurants, main .commentCaMarche, main .presentation, main .localisation, header, footer {
   display: grid;
   align-items: center;
   justify-items: center;
@@ -228,8 +250,8 @@ main .lesRestaurants h2 {
 main .lesRestaurants ul {
   grid-row: 2 / auto;
   grid-column: 1 / 5;
-  display: grid;
   grid-template-columns: repeat(4, 1fr);
+  display: grid;
   grid-gap: 2em;
   justify-self: normal;
   margin: 1em 0;

@@ -103,8 +103,8 @@ main{
         }
         & ul {
             @include grid-pos-set (2, auto, 1, 5);
-            display: grid;
             @include grid-template-set ($lesRestaurants);
+            display: grid;
             grid-gap: 2em;
             justify-self: normal;
             margin: 1em 0;
@@ -134,5 +134,4 @@ main{
             color: inherit;
         }
     }
-
 }
