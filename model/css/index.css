@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap");
-main .lesRestaurants, main .commentCaMarche, main .presentation, main .localisation, footer, header {
+main .lesRestaurants, main .commentCaMarche, main .presentation, main .localisation, header {
   display: grid;
   align-items: center;
   justify-items: center;
@@ -42,7 +42,7 @@ header #blockimg img {
   width: 100%;
 }
 
-main .lesRestaurants, main .commentCaMarche, main .presentation, main .localisation, footer, header {
+main .lesRestaurants, main .commentCaMarche, main .presentation, main .localisation, header {
   display: grid;
   align-items: center;
   justify-items: center;
@@ -74,7 +74,6 @@ main .lesRestaurants, main .commentCaMarche, main .presentation, main .localisat
 
 footer {
   background-color: #353535;
-  grid-template-columns: repeat(3, 1fr);
   padding: 3em;
 }
 footer h2 {
@@ -94,7 +93,7 @@ footer i {
   margin-right: 0.5rem;
 }
 
-main .lesRestaurants, main .commentCaMarche, main .presentation, main .localisation, header, footer {
+main .lesRestaurants, main .commentCaMarche, main .presentation, main .localisation, header {
   display: grid;
   align-items: center;
   justify-items: center;
