@@ -5,25 +5,38 @@
 
 
 footer{
-    background-color: $gris-sombre;
-    padding: 3em;
+    @extend %grid-center;
+    @include grid-template-set ($footer);
+    padding: 1em;
+    color: $txt-fond-sombre;
+    background: #353535;
+    font-family: 'Roboto', sans-serif;
 
     & h2 {
-        color: #fff;
-        font-family: Shrikhand,"cursive";
-        font-size: 1.2rem;
-        margin: 0 0 1rem;
+        @include grid-pos-set (1, auto, 1, auto);
+        margin: 0 0 1.5rem 0;
+        font-family: 'Shrikhand', cursive;
+        font-size: 1.4em;
+        font-weight: normal;
+        justify-self: start;
     }
 
-    & li {
-        margin: 0.75rem;
-    }
+    & ul{
+        @include grid-pos-set (2, auto, 1, 4);
+        justify-self: start;
+        
+        & li {
+            margin: 0 0 0.5rem 0;
 
-    & a{
-        color: #fff;
-        text-decoration: none;
-    }
-        & i {
-            margin-right: .5rem;
+            & a{
+                color: $txt-fond-sombre;
+                & .fa-utensils {
+                    padding: 0 1rem 0 0;
+                }
+                & .fa-hands-helping {
+                    padding: 0 0.55rem 0 0;
+                }
+            }
         }
+    }
 }

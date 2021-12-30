@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap");
-main .lesRestaurants, main .commentCaMarche, main .presentation, main .localisation, header {
+main .lesRestaurants, main .commentCaMarche, main .presentation, main .localisation, footer, header {
   display: grid;
   align-items: center;
   justify-items: center;
@@ -27,6 +27,34 @@ main .lesRestaurants, main .commentCaMarche, main .presentation, main .localisat
 .btn:hover {
   opacity: 0.8;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.btn__like .heart-away, button .heart-away {
+  display: block;
+  transform: scale(1);
+  transition: all 0.5s;
+}
+.btn__like .heart-hover, button .heart-hover {
+  display: block;
+  position: absolute;
+  top: 0;
+  transform: scale(0);
+  transition: all 0.5s;
+  background-color: black;
+  background-image: linear-gradient(0deg, #FF79DA, #9356DC);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+}
+
+.btn__like:hover .heart-away, button:hover .heart-away {
+  opacity: 0;
+  transform: scale(0);
+}
+.btn__like:hover .heart-hover, button:hover .heart-hover {
+  opacity: 1;
+  transform: scale(1);
 }
 
 header {
@@ -42,7 +70,7 @@ header #blockimg img {
   width: 100%;
 }
 
-main .lesRestaurants, main .commentCaMarche, main .presentation, main .localisation, header {
+main .lesRestaurants, main .commentCaMarche, main .presentation, main .localisation, footer, header {
   display: grid;
   align-items: center;
   justify-items: center;
@@ -70,30 +98,71 @@ main .lesRestaurants, main .commentCaMarche, main .presentation, main .localisat
 .btn:hover {
   opacity: 0.8;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.btn__like .heart-away, button .heart-away {
+  display: block;
+  transform: scale(1);
+  transition: all 0.5s;
+}
+.btn__like .heart-hover, button .heart-hover {
+  display: block;
+  position: absolute;
+  top: 0;
+  transform: scale(0);
+  transition: all 0.5s;
+  background-color: black;
+  background-image: linear-gradient(0deg, #FF79DA, #9356DC);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+}
+
+.btn__like:hover .heart-away, button:hover .heart-away {
+  opacity: 0;
+  transform: scale(0);
+}
+.btn__like:hover .heart-hover, button:hover .heart-hover {
+  opacity: 1;
+  transform: scale(1);
 }
 
 footer {
-  background-color: #353535;
-  padding: 3em;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 1em;
+  color: #ffffff;
+  background: #353535;
+  font-family: "Roboto", sans-serif;
 }
 footer h2 {
-  color: #fff;
-  font-family: Shrikhand, "cursive";
-  font-size: 1.2rem;
-  margin: 0 0 1rem;
+  grid-row: 1 / auto;
+  grid-column: 1 / auto;
+  margin: 0 0 1.5rem 0;
+  font-family: "Shrikhand", cursive;
+  font-size: 1.4em;
+  font-weight: normal;
+  justify-self: start;
 }
-footer li {
-  margin: 0.75rem;
+footer ul {
+  grid-row: 2 / auto;
+  grid-column: 1 / 4;
+  justify-self: start;
 }
-footer a {
-  color: #fff;
-  text-decoration: none;
+footer ul li {
+  margin: 0 0 0.5rem 0;
 }
-footer i {
-  margin-right: 0.5rem;
+footer ul li a {
+  color: #ffffff;
+}
+footer ul li a .fa-utensils {
+  padding: 0 1rem 0 0;
+}
+footer ul li a .fa-hands-helping {
+  padding: 0 0.55rem 0 0;
 }
 
-main .lesRestaurants, main .commentCaMarche, main .presentation, main .localisation, header {
+main .lesRestaurants, main .commentCaMarche, main .presentation, main .localisation, header, footer {
   display: grid;
   align-items: center;
   justify-items: center;
@@ -121,6 +190,34 @@ main .lesRestaurants, main .commentCaMarche, main .presentation, main .localisat
 .btn:hover {
   opacity: 0.8;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.btn__like .heart-away, button .heart-away {
+  display: block;
+  transform: scale(1);
+  transition: all 0.5s;
+}
+.btn__like .heart-hover, button .heart-hover {
+  display: block;
+  position: absolute;
+  top: 0;
+  transform: scale(0);
+  transition: all 0.5s;
+  background-color: black;
+  background-image: linear-gradient(0deg, #FF79DA, #9356DC);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+}
+
+.btn__like:hover .heart-away, button:hover .heart-away {
+  opacity: 0;
+  transform: scale(0);
+}
+.btn__like:hover .heart-hover, button:hover .heart-hover {
+  opacity: 1;
+  transform: scale(1);
 }
 
 * {
@@ -240,6 +337,7 @@ main .lesRestaurants {
   grid-template-columns: repeat(1, 1fr);
   padding: 3em 1em;
   background: #f6f6f6;
+  /* Fin section lesRestaurants */
 }
 main .lesRestaurants h2 {
   grid-row: 1 / auto;
@@ -249,32 +347,47 @@ main .lesRestaurants h2 {
 main .lesRestaurants ul {
   grid-row: 2 / auto;
   grid-column: 1 / 5;
-  grid-template-columns: repeat(4, 1fr);
   display: grid;
+  grid-template-columns: repeat(4, 1fr);
   grid-gap: 2em;
   justify-self: normal;
   margin: 1em 0;
 }
-main .lesRestaurants .sticker.sticker__new {
-  color: #1b6150;
-  padding: 10px 20px;
-  margin: 0;
-  position: absolute;
-  background: #99e2d0;
-  top: -16rem;
-  right: 2rem;
-}
-main .lesRestaurants img {
-  height: 60%;
+main .lesRestaurants li {
+  display: inline-block;
   width: 100%;
-  border-radius: 1rem 1rem 0 0;
-  box-shadow: none;
-  object-fit: cover;
 }
 main .lesRestaurants a {
-  background-color: #fff;
-  border-radius: 1rem;
+  display: block;
   position: relative;
-  text-decoration: none;
-  color: inherit;
+  padding: 0 0 0.7rem 0;
+  color: #000000;
+  border-radius: 1.5em;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+main .lesRestaurants a .sticker {
+  position: absolute;
+  top: 1em;
+  right: 1em;
+  color: #008766;
+  background: #99e2d0;
+  border-radius: 0.2em;
+  padding: 0.4em 0.6em;
+}
+main .lesRestaurants a img {
+  height: 12.5em;
+  width: 100%;
+  border-radius: 1.5em 1.5em 0 0;
+  padding: 0 0 0.5rem 0;
+  object-fit: cover;
+}
+main .lesRestaurants a h3, main .lesRestaurants a p {
+  padding: 0 1rem 0.5rem;
+}
+main .lesRestaurants a .btn__like {
+  position: absolute;
+  bottom: 2.5rem;
+  right: 1.5rem;
+  font-size: 1.5em;
+  cursor: pointer;
 }

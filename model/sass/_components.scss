@@ -27,3 +27,36 @@
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     }
 }
+
+.btn__like, button {
+  & .heart-away{
+    display: block;
+    transform: scale(1);
+    transition: all 0.5s;
+  }
+  & .heart-hover {
+    display: block;
+    position: absolute;
+    top: 0;
+    transform: scale(0);
+    transition: all 0.5s;
+    background-color: black;
+    background-image: linear-gradient(0deg, $rose-secondaire, $violet-primaire);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+  }
+}
+
+.btn__like:hover, button:hover {
+  & .heart-away {
+      opacity: 0;
+      transform: scale(0);
+
+  }
+  & .heart-hover {
+      opacity: 1;
+      transform: scale(1);
+  }
+}
