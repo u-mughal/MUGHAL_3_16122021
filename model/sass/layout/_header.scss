@@ -16,4 +16,15 @@ header{
             width: 100%;
         }
     }
+    
+    & h1 {
+        font-family: 'Shrikhand','cursive';
+        @include grid-template-set ($header);
+    }
+
+    & .btn__retourHome {
+        position: absolute;
+        left: 2rem;
+        height: 2rem;
+    }
 }
