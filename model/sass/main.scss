@@ -184,6 +184,36 @@ main{
                 left: 1.5%;
                 font-size: 100%;
             }
+
+        & .menuDuResto__carte h3 {
+            text-transform: uppercase;
+            position: relative;
+            padding-bottom: 0.4rem;
+            font-weight: 400;
+            padding: 0.5rem;
+        }
+            & .menuDuResto__carte h3::after {
+                content: "";
+                width: 3rem;
+                height: .25rem;
+                background-color: #99e2d0;
+                position: absolute;
+                left: 8px;
+                bottom: 0;
+            }
+
+            & ul {
+                display: grid;
+                @include grid-template-set(3);
+                grid-gap: 2rem;
+                padding: 20px 1rem 0.5rem;
+            }
+                strong {
+                    font-weight: 700;
+                    position: relative;
+                    left: 95%;
+                }
 }
+
 
 
