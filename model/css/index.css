@@ -402,7 +402,7 @@ main .lesRestaurants a .btn__like {
 }
 main .menuDuResto__cover {
   max-width: 100%;
-  max-height: 32rem;
+  max-height: 20rem;
   width: 100%;
   object-fit: cover;
 }
@@ -412,6 +412,9 @@ main .menuDuResto__carte {
   background-color: #f6f6f6;
   z-index: 1;
   position: relative;
+}
+main .menuDuResto__carte ul li {
+  padding: 0.5em 1em;
 }
 main .menuDuResto__carte h2 {
   font-family: "Shrikhand", "cursive";
@@ -423,6 +426,6 @@ main button {
   background: none;
   border: none;
   position: relative;
-  left: 85%;
+  left: 1.5%;
   font-size: 100%;
 }
