@@ -5,3 +5,12 @@
     justify-items: center;
 }
 
+//Soulignement titre
+%border-length-var {
+    &::after{
+        border-bottom: 3px #99E2D0 solid;
+        content: '';
+        display: block;
+        width: $border-length-var;
+    }
+}
