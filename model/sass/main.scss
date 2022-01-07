@@ -244,7 +244,7 @@ main{
                             transition: all 0.5s;
                         }
                         & .list-item{
-                            
+                           
                         }
                     }
                 }
@@ -274,25 +274,42 @@ main{
 
 /* media queries */
 @media (max-width: 1270px) {
-    .lesRestaurants ul{
-        @include grid-pos-set (2, auto, 1, 3);
-        @include grid-template-set (2);
-    }
-
-    .menuDuResto ul {
-        @include grid-pos-set (3, auto, 1, 3);
-        @include grid-template-set (2);
+    main {
+        .lesRestaurants ul{
+            @include grid-pos-set (2, auto, 1, 3);
+            @include grid-template-set (2);
+        }
+    
+        .menuDuResto ul {
+            @include grid-pos-set (3, auto, 1, 3);
+            @include grid-template-set (2);
+        }
     }
 }
 
 @media (max-width: 960px) {
-    .commentCaMarche ol {
-        @include grid-pos-set (2, auto, 1, 2);
-        @include grid-template-set (1);
-    }
-    .menuDuResto ul {
-        @include grid-pos-set (3, auto, 1, 3);
-        @include grid-template-set (1);
+    main {
+        .commentCaMarche ol {
+            @include grid-pos-set (2, auto, 1, 2);
+            @include grid-template-set (1);
+        }
+        .menuDuResto ul {
+            @include grid-pos-set (3, auto, 1, 3);
+            @include grid-template-set (1);
+        }
     }
 }
 
+@media (max-width: 480px) {
+    main {
+        .commentCaMarche ol {
+            @include grid-pos-set (2, auto, 1, 2);
+            @include grid-template-set (1);
+        }
+
+        .lesRestaurants ul {
+            @include grid-pos-set (2, auto, 1, 2);
+            @include grid-template-set (1);
+        }
+    }
+}
