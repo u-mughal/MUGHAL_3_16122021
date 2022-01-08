@@ -554,7 +554,7 @@ main .menuDuResto a {
     grid-template-columns: repeat(1, 1fr);
   }
 }
-@media (max-width: 480px) {
+@media (max-width: 540px) {
   main .commentCaMarche ol {
     grid-row: 2 / auto;
     grid-column: 1 / 2;
