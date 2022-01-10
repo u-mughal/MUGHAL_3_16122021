@@ -1,4 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap");
+@keyframes appear {
+  0% {
+    transform: translateY(50%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
 main .menuDuResto, main .lesRestaurants, main .commentCaMarche, main .presentation, main .localisation, footer, header {
   display: grid;
   align-items: center;
@@ -86,6 +96,16 @@ header .btn__retourHome {
   height: 2rem;
 }
 
+@keyframes appear {
+  0% {
+    transform: translateY(50%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
 main .menuDuResto, main .lesRestaurants, main .commentCaMarche, main .presentation, main .localisation, footer, header {
   display: grid;
   align-items: center;
@@ -185,6 +205,16 @@ footer ul li a .fa-hands-helping {
   padding: 0 0.55rem 0 0;
 }
 
+@keyframes appear {
+  0% {
+    transform: translateY(50%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
 main .menuDuResto, main .lesRestaurants, main .commentCaMarche, main .presentation, main .localisation, header, footer {
   display: grid;
   align-items: center;
@@ -474,6 +504,17 @@ main .menuDuResto__carte ul .list-item {
   cursor: pointer;
   overflow: hidden;
   font-size: 1.05em;
+  animation: appear 3s;
+  animation-fill-mode: both;
+}
+main .menuDuResto__carte ul .list-item:nth-child(1) {
+  animation-delay: 100ms;
+}
+main .menuDuResto__carte ul .list-item:nth-child(2) {
+  animation-delay: 200ms;
+}
+main .menuDuResto__carte ul .list-item:nth-child(3) {
+  animation-delay: 300ms;
 }
 main .menuDuResto__carte ul .list-item h4 {
   margin: 0 0 0.5rem 0;
