@@ -5,6 +5,13 @@
 
 
 header{
+
+    & .loader {
+        background-color: #ffffff;
+        height: 100vh;
+        z-index: 1;
+    }
+
     @extend %grid-center;
     @include grid-template-set($header);
     padding: 1em;

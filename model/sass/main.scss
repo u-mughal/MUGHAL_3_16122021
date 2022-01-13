@@ -206,13 +206,27 @@ main{
                     cursor: pointer;
                     overflow: hidden;
                     font-size: 1.05em;
-                    animation: appear 3s;
-                    animation-fill-mode: both;
-                    @for $i from 1 through 3 {
-                        &:nth-child(#{$i}) {
-                          animation-delay: 100ms * $i;
+
+                    animation: showingDishes 1000ms forwards;
+                    opacity: 0;
+        
+                    @for $i from 1 to $nb-resto-dishes {
+                        &--#{$i} {
+                            animation-delay: calc((1000ms / $nb-resto-dishes) * $i);
                         }
-                      }
+                    }
+        
+                    @keyframes showingDishes {
+                        0% {
+                            transform: translateY(2em);
+        
+                        }
+                        100% {
+                            transform: translateY(0);
+                            opacity: 1;
+                        }
+                    }
+                    
                     & h4{
                         margin: 0 0 0.5rem 0;
                         font-size: 1.1em;
@@ -248,9 +262,6 @@ main{
                         & .fa-check-circle{
                             transform: rotate(-240deg);
                             transition: all 0.5s;
-                        }
-                        & .list-item{
-                            
                         }
                     }
                 }

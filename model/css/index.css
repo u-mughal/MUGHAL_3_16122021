@@ -1,14 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap");
-@keyframes appear {
-  0% {
-    transform: translateY(50%);
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
 main .menuDuResto, main .lesRestaurants, main .commentCaMarche, main .presentation, main .localisation, footer, header {
   display: grid;
   align-items: center;
@@ -74,9 +64,95 @@ main .menuDuResto__carte h3::after {
   transform: scale(1);
 }
 
+.loader {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50px;
+  position: fixed;
+  z-index: 1;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  animation: 1s fadeOut 3000ms ease forwards;
+}
+
+.loading {
+  display: flex;
+}
+.loading .dot {
+  position: relative;
+  width: 2em;
+  height: 2em;
+  margin: 0.8em;
+  border-radius: 50%;
+}
+.loading .dot::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: inherit;
+  border-radius: inherit;
+  animation: wave 2s ease-out infinite;
+}
+.loading .dot:nth-child(1) {
+  background: #d9b2df;
+}
+.loading .dot:nth-child(1)::before {
+  animation-delay: 0.2s;
+}
+.loading .dot:nth-child(2) {
+  background: #d48be0;
+}
+.loading .dot:nth-child(2)::before {
+  animation-delay: 0.4s;
+}
+.loading .dot:nth-child(3) {
+  background: #cf66df;
+}
+.loading .dot:nth-child(3)::before {
+  animation-delay: 0.6s;
+}
+.loading .dot:nth-child(4) {
+  background: #cc44e0;
+}
+.loading .dot:nth-child(4)::before {
+  animation-delay: 0.8s;
+}
+.loading .dot:nth-child(5) {
+  background: #c416df;
+}
+.loading .dot:nth-child(5)::before {
+  animation-delay: 1s;
+}
+
+@keyframes wave {
+  50%, 75% {
+    transform: scale(2.5);
+  }
+  80%, 100% {
+    opacity: 0;
+  }
+}
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
 header {
   grid-template-columns: repeat(1, 1fr);
   padding: 1em;
+}
+header .loader {
+  background-color: #ffffff;
+  height: 100vh;
+  z-index: 1;
 }
 header #blockimg {
   width: 30%;
@@ -96,16 +172,6 @@ header .btn__retourHome {
   height: 2rem;
 }
 
-@keyframes appear {
-  0% {
-    transform: translateY(50%);
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
 main .menuDuResto, main .lesRestaurants, main .commentCaMarche, main .presentation, main .localisation, footer, header {
   display: grid;
   align-items: center;
@@ -171,6 +237,87 @@ main .menuDuResto__carte h3::after {
   transform: scale(1);
 }
 
+.loader {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50px;
+  position: fixed;
+  z-index: 1;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  animation: 1s fadeOut 3000ms ease forwards;
+}
+
+.loading {
+  display: flex;
+}
+.loading .dot {
+  position: relative;
+  width: 2em;
+  height: 2em;
+  margin: 0.8em;
+  border-radius: 50%;
+}
+.loading .dot::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: inherit;
+  border-radius: inherit;
+  animation: wave 2s ease-out infinite;
+}
+.loading .dot:nth-child(1) {
+  background: #d9b2df;
+}
+.loading .dot:nth-child(1)::before {
+  animation-delay: 0.2s;
+}
+.loading .dot:nth-child(2) {
+  background: #d48be0;
+}
+.loading .dot:nth-child(2)::before {
+  animation-delay: 0.4s;
+}
+.loading .dot:nth-child(3) {
+  background: #cf66df;
+}
+.loading .dot:nth-child(3)::before {
+  animation-delay: 0.6s;
+}
+.loading .dot:nth-child(4) {
+  background: #cc44e0;
+}
+.loading .dot:nth-child(4)::before {
+  animation-delay: 0.8s;
+}
+.loading .dot:nth-child(5) {
+  background: #c416df;
+}
+.loading .dot:nth-child(5)::before {
+  animation-delay: 1s;
+}
+
+@keyframes wave {
+  50%, 75% {
+    transform: scale(2.5);
+  }
+  80%, 100% {
+    opacity: 0;
+  }
+}
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
 footer {
   grid-template-columns: repeat(3, 1fr);
   padding: 1em;
@@ -205,16 +352,6 @@ footer ul li a .fa-hands-helping {
   padding: 0 0.55rem 0 0;
 }
 
-@keyframes appear {
-  0% {
-    transform: translateY(50%);
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
 main .menuDuResto, main .lesRestaurants, main .commentCaMarche, main .presentation, main .localisation, header, footer {
   display: grid;
   align-items: center;
@@ -280,6 +417,87 @@ main .menuDuResto__carte h3::after {
   transform: scale(1);
 }
 
+.loader {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50px;
+  position: fixed;
+  z-index: 1;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  animation: 1s fadeOut 3000ms ease forwards;
+}
+
+.loading {
+  display: flex;
+}
+.loading .dot {
+  position: relative;
+  width: 2em;
+  height: 2em;
+  margin: 0.8em;
+  border-radius: 50%;
+}
+.loading .dot::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: inherit;
+  border-radius: inherit;
+  animation: wave 2s ease-out infinite;
+}
+.loading .dot:nth-child(1) {
+  background: #d9b2df;
+}
+.loading .dot:nth-child(1)::before {
+  animation-delay: 0.2s;
+}
+.loading .dot:nth-child(2) {
+  background: #d48be0;
+}
+.loading .dot:nth-child(2)::before {
+  animation-delay: 0.4s;
+}
+.loading .dot:nth-child(3) {
+  background: #cf66df;
+}
+.loading .dot:nth-child(3)::before {
+  animation-delay: 0.6s;
+}
+.loading .dot:nth-child(4) {
+  background: #cc44e0;
+}
+.loading .dot:nth-child(4)::before {
+  animation-delay: 0.8s;
+}
+.loading .dot:nth-child(5) {
+  background: #c416df;
+}
+.loading .dot:nth-child(5)::before {
+  animation-delay: 1s;
+}
+
+@keyframes wave {
+  50%, 75% {
+    transform: scale(2.5);
+  }
+  80%, 100% {
+    opacity: 0;
+  }
+}
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -504,17 +722,44 @@ main .menuDuResto__carte ul .list-item {
   cursor: pointer;
   overflow: hidden;
   font-size: 1.05em;
-  animation: appear 3s;
-  animation-fill-mode: both;
+  animation: showingDishes 1000ms forwards;
+  opacity: 0;
 }
-main .menuDuResto__carte ul .list-item:nth-child(1) {
+main .menuDuResto__carte ul .list-item--1 {
   animation-delay: 100ms;
 }
-main .menuDuResto__carte ul .list-item:nth-child(2) {
+main .menuDuResto__carte ul .list-item--2 {
   animation-delay: 200ms;
 }
-main .menuDuResto__carte ul .list-item:nth-child(3) {
+main .menuDuResto__carte ul .list-item--3 {
   animation-delay: 300ms;
+}
+main .menuDuResto__carte ul .list-item--4 {
+  animation-delay: 400ms;
+}
+main .menuDuResto__carte ul .list-item--5 {
+  animation-delay: 500ms;
+}
+main .menuDuResto__carte ul .list-item--6 {
+  animation-delay: 600ms;
+}
+main .menuDuResto__carte ul .list-item--7 {
+  animation-delay: 700ms;
+}
+main .menuDuResto__carte ul .list-item--8 {
+  animation-delay: 800ms;
+}
+main .menuDuResto__carte ul .list-item--9 {
+  animation-delay: 900ms;
+}
+@keyframes showingDishes {
+  0% {
+    transform: translateY(2em);
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 main .menuDuResto__carte ul .list-item h4 {
   margin: 0 0 0.5rem 0;
